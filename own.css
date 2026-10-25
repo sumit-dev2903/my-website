@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Share+Tech+Mono&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+padding: 20px;
+background: #03060b;
+color: #e8fff9;
+font-family: 'Share Tech Mono', monospace;
+}
+
+body::before {
+content: "";
+position: fixed;
+inset: 0;
+background:
+linear-gradient(#00ffc310 1px, transparent 1px),
+linear-gradient(90deg, #00ffc310 1px, transparent 1px);
+background-size: 35px 35px;
+mask-image: linear-gradient(to bottom, black, transparent);
+pointer-events: none;
+}
+
+.container {
+position: relative;
+width: 100%;
+max-width: 500px;
+padding: 40px 25px;
+text-align: center;
+border: 1px solid #00ffc355;
+border-radius: 18px;
+background: rgba(5, 15, 23, 0.92);
+box-shadow:
+0 0 25px #00ffc315,
+inset 0 0 30px #00ffc308;
+animation: appear 0.8s ease-out;
+}
+
+.tag {
+display: inline-block;
+padding: 7px 14px;
+margin-bottom: 28px;
+border: 1px solid #00ffc366;
+border-radius: 5px;
+color: #00ffc3;
+font-size: 11px;
+letter-spacing: 3px;
+}
+
+h1 {
+font-family: 'Orbitron', sans-serif;
+font-size: clamp(27px, 7vw, 40px);
+font-weight: 800;
+line-height: 1.4;
+margin-bottom: 15px;
+color: #ffffff;
+text-shadow: 0 0 18px #00ffc355;
+}
+
+h1 span {
+color: #00ffc3;
+}
+
+p {
+color: #8ca9b1;
+font-size: 15px;
+line-height: 1.8;
+margin-bottom: 25px;
+}
+
+.loader {
+width: 100%;
+height: 4px;
+overflow: hidden;
+background: #15252b;
+border-radius: 20px;
+margin: 25px 0;
+}
+
+.loader span {
+display: block;
+width: 35%;
+height: 100%;
+background: #00ffc3;
+box-shadow: 0 0 15px #00ffc3;
+animation: loading 1.5s ease-in-out infinite;
+}
+
+.btn {
+display: inline-block;
+padding: 14px 25px;
+border: 1px solid #00ffc3;
+border-radius: 7px;
+background: #00ffc30d;
+color: #00ffc3;
+text-decoration: none;
+font-size: 13px;
+letter-spacing: 2px;
+transition: 0.3s ease;
+}
+
+.btn:hover {
+color: #03060b;
+background: #00ffc3;
+box-shadow: 0 0 25px #00ffc388;
+transform: translateY(-3px);
+}
+
+/* Footer */
+.footer {
+margin-top: 30px;
+color: #526b73;
+font-size: 10px;
+letter-spacing: 2px;
+}
+
+@keyframes loading {
+0%   { transform: translateX(-120%); }
+100% { transform: translateX(350%); }
+}
+
+@keyframes appear {
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+.container {
+padding: 32px 20px;
+}
+
+.tag {
+    letter-spacing: 2px;
+}
+
+}
