@@ -1428,4 +1428,10 @@ svg {
         object-fit: contain;
     }
 }
+.hero-visual,
+.hero-image,
+.hero-art,
+.hero-right {
+    display: none !important;
+}
 
