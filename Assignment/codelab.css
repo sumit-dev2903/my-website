@@ -977,3 +977,380 @@ img {
     html { scroll-padding-top: 130px; }
 
     .navbar 
+
+.code-line {
+    min-width: 0;
+    gap: 12px;
+}
+
+.code-line code {
+    display: block;
+    min-width: 0;
+    white-space: nowrap;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+@media (max-width: 700px) {
+    html {
+        scroll-padding-top: 110px;
+    }
+
+    body {
+        background-attachment: scroll;
+    }
+
+    .navbar {
+        position: sticky;
+        top: 0;
+        min-height: auto;
+        padding: 12px 16px;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 22px;
+        gap: 8px;
+    }
+
+    .logo-icon {
+        width: 34px;
+        height: 34px;
+        border-radius: 10px;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 8px 0 3px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .nav-link::after {
+        bottom: -4px;
+    }
+
+    .btn-nav {
+        min-height: 36px;
+        padding: 0 12px;
+        font-size: 11px;
+        gap: 5px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 52px 20px 45px;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 30px;
+    }
+
+    .hero-content {
+        min-width: 0;
+    }
+
+    .hero-badge {
+        margin-bottom: 20px;
+        padding: 8px 11px;
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .hero h1 {
+        margin-bottom: 18px;
+        font-size: clamp(32px, 8vw, 43px);
+        line-height: 1.17;
+        letter-spacing: -1.7px;
+        overflow-wrap: normal;
+    }
+
+    .hero-description {
+        margin-bottom: 22px;
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .hero-buttons {
+        gap: 10px;
+    }
+
+    .btn {
+        min-height: 44px;
+        padding: 0 15px;
+        gap: 8px;
+        font-size: 12px;
+    }
+
+    .hero-stats {
+        margin-top: 30px;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    .stat {
+        min-width: 0;
+    }
+
+    .stat h3 {
+        font-size: 21px;
+    }
+
+    .stat p {
+        font-size: 9px;
+    }
+
+    .stat-divider {
+        height: 34px;
+        flex-shrink: 0;
+    }
+
+    .hero-visual {
+        width: 100%;
+        min-width: 0;
+        padding: 28px 5px 32px;
+    }
+
+    .code-window {
+        width: 100%;
+        max-width: 100%;
+        transform: none;
+        border-radius: 16px;
+    }
+
+    .code-window:hover {
+        transform: none;
+    }
+
+    .window-header {
+        min-height: 44px;
+        padding: 0 12px;
+    }
+
+    .window-dots {
+        gap: 5px;
+    }
+
+    .window-dots span {
+        width: 8px;
+        height: 8px;
+    }
+
+    .window-title {
+        font-size: 10px;
+    }
+
+    .code-content {
+        min-height: auto;
+        padding: 20px 10px;
+        overflow-x: auto;
+    }
+
+    .code-line {
+        min-height: 29px;
+        gap: 10px;
+    }
+
+    .line-number {
+        width: 18px;
+        font-size: 10px;
+    }
+
+    .code-line code {
+        font-size: 11px;
+        line-height: 1.8;
+    }
+
+    .empty-line {
+        min-height: 12px;
+    }
+
+    .code-footer {
+        min-height: 36px;
+        padding: 0 10px;
+        font-size: 9px;
+    }
+
+    .floating-card {
+        gap: 8px;
+        padding: 9px 11px;
+        border-radius: 12px;
+    }
+
+    .floating-top {
+        top: 0;
+        right: -2px;
+    }
+
+    .floating-bottom {
+        bottom: 0;
+        left: -2px;
+    }
+
+    .floating-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .floating-card strong {
+        font-size: 10px;
+    }
+
+    .floating-card p {
+        font-size: 9px;
+    }
+
+    .tech-strip {
+        padding: 30px 18px;
+    }
+
+    .tech-label {
+        margin-bottom: 20px;
+        font-size: 9px;
+        letter-spacing: 1.3px;
+    }
+
+    .tech-list {
+        gap: 15px 22px;
+    }
+
+    .tech-item {
+        gap: 8px;
+        font-size: 11px;
+    }
+
+    .tech-symbol {
+        width: 28px;
+        height: 28px;
+    }
+
+    .courses-section {
+        padding: 65px 18px;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 28px;
+    }
+
+    .section-tag {
+        margin-bottom: 12px;
+    }
+
+    .section-heading h2,
+    .cta-content h2 {
+        font-size: clamp(30px, 7vw, 38px);
+        letter-spacing: -1.3px;
+    }
+
+    .section-description {
+        max-width: 100%;
+        font-size: 12px;
+    }
+
+    .course-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 16px;
+    }
+
+    .course-card {
+        min-height: 350px;
+        padding: 22px 19px;
+    }
+
+    .course-icon {
+        margin: 20px 0 15px;
+    }
+
+    .course-card h3 {
+        font-size: 21px;
+    }
+
+    .course-description {
+        font-size: 12px;
+    }
+
+    .cta-section {
+        max-width: calc(100% - 36px);
+        min-height: auto;
+        margin: 0 auto 45px;
+        padding: 35px 23px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        border-radius: 22px;
+    }
+
+    .cta-content p {
+        font-size: 12px;
+    }
+
+    .cta-decoration {
+        align-self: center;
+        padding: 0;
+        font-size: 80px;
+    }
+
+    .footer {
+        padding: 25px 18px;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footer p {
+        line-height: 1.8;
+    }
+
+    .background-glow {
+        width: 220px;
+        height: 220px;
+        filter: blur(65px);
+    }
+
+    .glow-one {
+        left: -140px;
+    }
+
+    .glow-two {
+        right: -140px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 700px) {
+    .course-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .course-card {
+        min-height: 390px;
+        padding: 18px 14px;
+    }
+
+    .course-card h3 {
+        font-size: 19px;
+    }
+
+    .course-description {
+        font-size: 11px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
