@@ -1354,3 +1354,78 @@ img {
         transition-duration: 0.01ms !important;
     }
 }
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+}
+
+img,
+video,
+canvas,
+svg {
+    max-width: 100%;
+}
+.hero,
+.hero-section,
+.hero-content,
+.hero-visual,
+.hero-image,
+.hero-art,
+.hero-right {
+    min-width: 0;
+    max-width: 100%;
+}
+@media screen and (max-width: 768px) {
+
+    .hero,
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .hero-content,
+    .hero-visual,
+    .hero-image,
+    .hero-art,
+    .hero-right {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .hero-visual,
+    .hero-image,
+    .hero-art,
+    .hero-right {
+        position: relative;
+        left: auto;
+        right: auto;
+        transform: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-visual img,
+    .hero-image img,
+    .hero-art img,
+    .hero-right img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
