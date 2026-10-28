@@ -216,3 +216,37 @@ body > p {
     margin: 0;
 }
 
+
+
+@media (max-width: 768px) {
+    .pages,
+    .explore-container,
+    .page-links {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .pages a,
+    .explore-container a,
+    .page-links a {
+        box-sizing: border-box;
+    }
+
+    .pages,
+    .explore-container,
+    .page-links {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .pages .card,
+    .explore-container .card,
+    .page-links .card {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
